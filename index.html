@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="display">
+        <div class="title">Calculator</div>
+        <label for="equation" id="equation"></label>
+        <input type="text" id="screen">
+      </div>
+      <div class="keypads">
+        <div class="pad ac"><button id="ac" title="Clear All" onclick="clearall()"><span>Clear</span></div>
+        <div class="pad percentage"><button id="ac" title="Modulo" onclick="percentage()"><span>%</span></button></div>
+        <div class="pad divide"><button id="ac" title="Divide" onclick="divide()"><span>/</span></button></div>
+        <div class="pad seven"><button id="ac" title="7" onclick="seven()"><span>7</span></button></div>
+        <div class="pad eight"><button id="ac" title="8" onclick="eight()"><span>8</span></button></div>
+        <div class="pad nine"><button id="ac" title="9" onclick="nine()"><span>9</span></button></div>
+        <div class="pad multiply"><button id="ac" title="multiply" onclick="multiply()"><span>*</span></button></div>
+        <div class="pad four"><button id="ac" title="4" onclick="four()"><span>4</span></button></div>
+        <div class="pad five"><button id="ac" title="5" onclick="five()"><span>5</span></button></div>
+        <div class="pad six"><button id="ac" title="6" onclick="six()"><span>6</span></button></div>
+        <div class="pad subtract"><button id="ac" title="Subtract" onclick="subtract()"><span>-</span></button></div>
+        <div class="pad one"><button id="ac" title="1" onclick="one()"><span>1</span></button></div>
+        <div class="pad two"><button id="ac" title="2" onclick="two()"><span>2</span></button></div>
+        <div class="pad three"><button id="ac" title="3" onclick="three()"><span>3</span></button></div>
+        <div class="pad add"><button id="ac" title="add" onclick="add()"><span>+</span></button></div>
+        <div class="pad zero"><button id="ac" title="0" onclick="zero()"><span>0</span></button></div>
+        <div class="pad period"><button id="ac" title="Period" onclick="period()"><span>.</span></button></div>
+        <div class="pad equals"><button id="ac" title="Equals" onclick="equals()"><span>=</span></button></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

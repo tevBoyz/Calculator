@@ -1,0 +1,206 @@
+body {
+  font-family: cursive;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  border: 1px solid black;
+  box-shadow: 5px 10px;
+  height: 800px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.display {
+  border: 3px solid black;
+  background-color: rgb(63, 62, 62);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.display input {
+  border: 1px solid black;
+  height: 50%;
+  width: 100%;
+  text-align: end;
+  font-size: 2.5rem;
+}
+
+#equation {
+  background-color: rgb(162, 162, 206);
+  height: 25%;
+  width: 100%;
+  text-align: end;
+  font-size: 2rem;
+}
+
+.keypads {
+  border: 3px solid rgb(0, 0, 0);
+  background-color: rgb(63, 62, 62);
+  flex: 3;
+  width: 100%;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  place-items: center;
+}
+
+.pad {
+  border: 3px solid black;
+  box-shadow: 3px 3px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad button {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.pad span {
+  font-family: cursive;
+  font-size: 2rem;
+}
+
+.equals {
+  grid-area: 5/ 3 / 6/ 5;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.equals button {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.equals > button > span {
+  font-size: 4rem;
+}
+.ac {
+  grid-area: 1/ 1/ 2/ 3;
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.ac button {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.ac > button > span {
+  font-size: 2rem;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .main-container {
+    width: 400px;
+    height: 600px;
+  }
+  .display {
+    flex: 1;
+  }
+
+  #equation {
+    border: 5px solid green;
+  }
+
+  .keypads {
+    flex: 3;
+  }
+
+  .title {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .pad {
+    height: 80px;
+    width: 80px;
+  }
+
+  .pad button {
+    height: 80px;
+    width: 80px;
+  }
+
+  .pad span {
+    font-family: cursive;
+    font-size: 1rem;
+  }
+
+  .equals {
+    grid-area: 5/ 3 / 6/ 5;
+    height: 100px;
+    width: 140px;
+    border-radius: 10px;
+  }
+
+  .equals button {
+    height: 100px;
+    width: 140px;
+    border-radius: 10px;
+  }
+
+  .equals > button > span {
+    font-size: 4rem;
+  }
+  .ac {
+    grid-area: 1/ 1/ 2/ 3;
+    height: 100px;
+    width: 140px;
+    border-radius: 10px;
+  }
+
+  .ac button {
+    height: 100px;
+    width: 140px;
+    border-radius: 10px;
+  }
+
+  .ac > button > span {
+    font-size: 2rem;
+  }
+
+  .display input {
+    border: 1px solid black;
+    height: 50%;
+    width: 100%;
+    text-align: end;
+    font-size: 1.5rem;
+  }
+
+  #equation {
+    background-color: rgb(162, 162, 206);
+    height: 25%;
+    width: 100%;
+    text-align: end;
+    font-size: 1rem;
+  }
+}
