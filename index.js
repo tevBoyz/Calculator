@@ -105,7 +105,7 @@ function one(){
 }
 
 function zero(){
-    // if(buffer !== '') 
+    if(buffer !== '') 
     buffer += ('0');
     updatedisp();
 }
