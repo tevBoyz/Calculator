@@ -7,13 +7,18 @@ var secScreen = document.getElementById("equation");
 
 function updatedisp(){
     myScreen.value = buffer;
-    console.log(buffer);
     secScreen.innerHTML = memory;
 }
 
 function clearall(){
     buffer = '';
     memory = '';
+    updatedisp();
+
+}
+
+function clearOne(){
+    buffer = buffer.slice(0, buffer.length-1);
     updatedisp();
 }
 
@@ -44,7 +49,7 @@ function add(){
 
 function equals(){
     // buffer += ('=');
-    memory = buffer + " equals";
+    memory = buffer + " =";
     buffer = "" + eval(buffer) +"";
     updatedisp();
 }

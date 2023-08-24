@@ -99,19 +99,36 @@ body {
   font-size: 4rem;
 }
 .ac {
-  grid-area: 1/ 1/ 2/ 3;
+  grid-area: 1/ 1/ 2/ 2;
   height: 100px;
-  width: 200px;
+  width: 100px;
   border-radius: 10px;
 }
 
 .ac button {
   height: 100px;
-  width: 200px;
+  width: 100px;
   border-radius: 10px;
 }
 
 .ac > button > span {
+  font-size: 2rem;
+}
+
+.c {
+  grid-area: 1/ 2/ 2/ 3;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.c button {
+  height: 100px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.c > button > span {
   font-size: 2rem;
 }
 
@@ -130,7 +147,6 @@ body {
   }
 
   #equation {
-    border: 5px solid green;
     height: 20%;
   }
 
